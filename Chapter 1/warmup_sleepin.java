@@ -1,6 +1,6 @@
 public class warmup_sleepin {
-    public static boolean sleepIn(boolean isWeekday, boolean isVacation) {
-        if (!isWeekday || isVacation) {
+    public static boolean sleepIn(boolean weekday, boolean vacation) {
+        if (!weekday || vacation) {
             return true;
         } else {
             return false;
