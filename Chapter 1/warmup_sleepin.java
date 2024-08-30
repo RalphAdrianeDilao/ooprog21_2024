@@ -1,15 +1,27 @@
+import java.util.Scanner;
+
 public class warmup_sleepin {
     public static boolean sleepIn(boolean weekday, boolean vacation) {
-        if (!weekday || vacation) {
-            return true;
-        } else {
-            return false;
-        }
+        return !weekday || vacation;
     }
 
     public static void main(String[] args) {
-        System.out.println(sleepIn(false, false));
-        System.out.println(sleepIn(true, false));
-        System.out.println(sleepIn(false, true));
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Is it a Weekday? (true/false): ");
+        boolean weekday = scanner.nextBoolean();
+
+        System.out.print("Is it a Vacation day? (true/false): ");
+        boolean vacation = scanner.nextBoolean();
+
+        boolean canUserSleepIn = sleepIn(weekday, vacation);
+
+        if(canUserSleepIn) {
+            System.out.println("You can sleep in.");
+        } else {
+            System.out.println("You cannot sleep in.");
+        }
+
+        scanner.close();
     }
 }
