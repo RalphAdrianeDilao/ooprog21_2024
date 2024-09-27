@@ -2,6 +2,7 @@ public class TestCircle {
     public static void main(String[] args) {
         Circle a = new Circle();
         Circle b = new Circle();
+        Circle c = new Circle();
 
         a.setRadius(3);
         System.out.println("Radius of the first circle: " + Circle.getRadius());
