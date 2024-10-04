@@ -1,5 +1,3 @@
-package BloodDataChallenge;
-
 import java.util.Scanner;
 
 public class TestBloodData {
