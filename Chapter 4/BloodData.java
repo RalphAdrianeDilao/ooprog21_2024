@@ -1,5 +1,3 @@
-package BloodDataChallenge;
-
 public class BloodData {
     private String bloodType;
     private String rhFactor;
