@@ -11,8 +11,6 @@ public class Sort {
         System.out.print("Input the third number: ");
         int third = scan.nextInt();
 
-        boolean isAlreadySorted = false;
-
         if (first < second && second < third) {
             System.out.println("Input is already in ascending order. Printing in ascending order.");
             System.out.printf("Ascending Order: %d, %d, %d", first, second, third);
